@@ -1,0 +1,22 @@
+
+
+
+// Instantiate the module
+Forward instance_name (
+    .rsD(rsD), 
+    .rtD(rtD), 
+    .rsE(rsE), 
+    .rtE(rtE), 
+    .rt_rdE(rt_rdE), 
+    .rt_rdM(rt_rdM), 
+    .rt_rdW(rt_rdW), 
+    .T_new_E(T_new_E), 
+    .T_new_M(T_new_M), 
+    .T_new_W(T_new_W), 
+    .forwardAD(forwardAD), 
+    .forwardBD(forwardBD), 
+    .forwardAE(forwardAE), 
+    .forwardBE(forwardBE)
+    );
+
+

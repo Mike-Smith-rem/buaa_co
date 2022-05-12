@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+MUX_PC instance_name (
+    .PCplus(PCplus), 
+    .PCextern(PCextern), 
+    .PCjump(PCjump), 
+    .sel(sel), 
+    .out(out)
+    );
+
+

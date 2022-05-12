@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+CMP instance_name (
+    .RD1(RD1), 
+    .RD2(RD2), 
+    .equal(equal)
+    );
+
+

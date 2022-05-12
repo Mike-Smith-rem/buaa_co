@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+C_EXT_MEM instance_name (
+    .regwE(regwE), 
+    .memtoregE(memtoregE), 
+    .memwE(memwE), 
+    .clk(clk), 
+    .T_new_E(T_new_E), 
+    .regwM(regwM), 
+    .memtoregM(memtoregM), 
+    .memwM(memwM), 
+    .T_new_M(T_new_M)
+    );
+
+

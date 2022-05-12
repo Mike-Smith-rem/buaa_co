@@ -1,0 +1,23 @@
+
+
+
+// Instantiate the module
+control instance_name (
+    .op(op), 
+    .fun(fun), 
+    .regdst(regdst), 
+    .j26(j26), 
+    .ALUsrc(ALUsrc), 
+    .Jal(Jal), 
+    .memtoreg(memtoreg), 
+    .Jr(Jr), 
+    .regw(regw), 
+    .memw(memw), 
+    .memr(memr), 
+    .Beq(Beq), 
+    .signop(signop), 
+    .zeroop(zeroop), 
+    .ALU(ALU)
+    );
+
+

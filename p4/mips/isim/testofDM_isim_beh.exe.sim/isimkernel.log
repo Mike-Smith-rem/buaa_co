@@ -1,0 +1,28 @@
+Command line:
+   testofDM_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52688
+
+Fri Dec 04 14:31:11 2020
+
+
+ Elaboration Time: 0.171875 sec
+
+ Current Memory Usage: 5163.35 Meg
+
+ Total Signals          : 23
+ Total Nets             : 155
+ Total Signal Drivers   : 14
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 20
+ Total Traceable Variables  : 27
+ Total Scalar Nets and Variables : 33113
+
+ Total Simulation Time: 0.21875 sec
+
+ Current Memory Usage: 4691.49 Meg
+
+Fri Dec 04 14:34:07 2020
+

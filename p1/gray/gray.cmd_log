@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/gray/gray.xst" -ofn "E:/gray/gray.syr" 

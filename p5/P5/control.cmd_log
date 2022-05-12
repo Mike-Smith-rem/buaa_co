@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "E:/P5/control.xst" -ofn "E:/P5/control.syr" 

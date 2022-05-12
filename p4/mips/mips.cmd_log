@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "E:/mips/mips.xst" -ofn "E:/mips/mips.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-2 mips.ngc mips.ngd  
+map -intstyle ise -p xc7a100t-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o mips_map.ncd mips.ngd mips.pcf 

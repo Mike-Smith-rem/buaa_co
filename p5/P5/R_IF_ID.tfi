@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+R_IF_ID instance_name (
+    .instr_in(instr_in), 
+    .PCplus_in(PCplus_in), 
+    .clk(clk), 
+    .instr_out(instr_out), 
+    .PCplus_out(PCplus_out), 
+    .EnD(EnD), 
+    .FlushD(FlushD)
+    );
+
+

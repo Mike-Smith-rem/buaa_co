@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+DM instance_name (
+    .memw(memw), 
+    .clk(clk), 
+    .memr(memr), 
+    .clr(clr), 
+    .add(add), 
+    .wdata(wdata), 
+    .PC(PC), 
+    .rdata(rdata)
+    );
+
+

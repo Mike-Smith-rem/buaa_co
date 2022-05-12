@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj P5 -o E:/P5/MUX_PC.tfi -lib work E:/P5//MUX_PC.v -module MUX_PC -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

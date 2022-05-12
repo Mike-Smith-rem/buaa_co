@@ -1,0 +1,31 @@
+
+
+
+// Instantiate the module
+or_logic instance_name (
+    .addu(addu), 
+    .subu(subu), 
+    .jr(jr), 
+    .beq(beq), 
+    .lui(lui), 
+    .lw(lw), 
+    .ori(ori), 
+    .sw(sw), 
+    .j(j), 
+    .jal(jal), 
+    .regdst(regdst), 
+    .j26(j26), 
+    .ALUsrc(ALUsrc), 
+    .Jal(Jal), 
+    .memtoreg(memtoreg), 
+    .Jr(Jr), 
+    .regw(regw), 
+    .memw(memw), 
+    .memr(memr), 
+    .Beq(Beq), 
+    .signop(signop), 
+    .zeroop(zeroop), 
+    .ALU(ALU)
+    );
+
+

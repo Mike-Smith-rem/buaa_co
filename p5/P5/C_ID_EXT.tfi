@@ -1,0 +1,24 @@
+
+
+
+// Instantiate the module
+C_ID_EXT instance_name (
+    .op(op), 
+    .fun(fun), 
+    .regwD(regwD), 
+    .memtoregD(memtoregD), 
+    .memwD(memwD), 
+    .ALUD(ALUD), 
+    .ALUsrcD(ALUsrcD), 
+    .regdstD(regdstD), 
+    .clk(clk), 
+    .regwE(regwE), 
+    .memtoregE(memtoregE), 
+    .memwE(memwE), 
+    .ALUE(ALUE), 
+    .ALUsrcE(ALUsrcE), 
+    .regdstE(regdstE), 
+    .T_new_E(T_new_E)
+    );
+
+

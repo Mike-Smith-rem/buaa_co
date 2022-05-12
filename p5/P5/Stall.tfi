@@ -1,0 +1,16 @@
+
+
+
+// Instantiate the module
+Stall instance_name (
+    .T_use_rs(T_use_rs), 
+    .T_use_rt(T_use_rt), 
+    .T_new_E(T_new_E), 
+    .T_new_M(T_new_M), 
+    .T_new_W(T_new_W), 
+    .flushD(flushD), 
+    .flushE(flushE), 
+    .stallF(stallF)
+    );
+
+

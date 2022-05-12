@@ -1,0 +1,489 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: cpu_checker.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "cpu_checker.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "cpu_checker"
+Output Format                      : NGC
+Target Device                      : xc7a100t-2-csg324
+
+---- Source Options
+Top Module Name                    : cpu_checker
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\cpu_checker\cpu_checker.v" into library work
+Parsing module <cpu_checker>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <cpu_checker>.
+WARNING:HDLCompiler:413 - "E:\cpu_checker\cpu_checker.v" Line 75: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "E:\cpu_checker\cpu_checker.v" Line 94: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\cpu_checker\cpu_checker.v" Line 219: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\cpu_checker\cpu_checker.v" Line 236: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\cpu_checker\cpu_checker.v" Line 277: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\cpu_checker\cpu_checker.v" Line 319: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "E:\cpu_checker\cpu_checker.v" Line 335: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <cpu_checker>.
+    Related source file is "E:\cpu_checker\cpu_checker.v".
+    Found 8-bit register for signal <statex1>.
+    Found 4-bit register for signal <statey4>.
+    Found 4-bit register for signal <statey1>.
+    Found 4-bit register for signal <statex5>.
+    Found 4-bit register for signal <states2>.
+    Found 3-bit register for signal <states1>.
+    Found 5-bit register for signal <current_state>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 21                                             |
+    | Transitions        | 134                                            |
+    | Inputs             | 33                                             |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 00000                                          |
+    | Power Up State     | 00000                                          |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit adder for signal <states1[2]_GND_1_o_add_6_OUT> created at line 75.
+    Found 4-bit adder for signal <states2[3]_GND_1_o_add_20_OUT> created at line 94.
+    Found 4-bit adder for signal <statex5[3]_GND_1_o_add_114_OUT> created at line 236.
+    Found 4-bit adder for signal <statey1[3]_GND_1_o_add_136_OUT> created at line 277.
+    Found 4-bit adder for signal <statey4[3]_GND_1_o_add_174_OUT> created at line 335.
+    Found 3-bit comparator greater for signal <n0002> created at line 74
+    Found 3-bit comparator greater for signal <n0007> created at line 76
+    Found 3-bit comparator greater for signal <n0010> created at line 76
+    Found 4-bit comparator greater for signal <states2[3]_GND_1_o_LessThan_20_o> created at line 93
+    Found 8-bit comparator greater for signal <n0034> created at line 132
+    Found 8-bit comparator greater for signal <GND_1_o_char[7]_LessThan_51_o> created at line 138
+    Found 8-bit comparator greater for signal <n0048> created at line 148
+    Found 8-bit comparator lessequal for signal <n0053> created at line 153
+    Found 4-bit comparator greater for signal <statex5[3]_GND_1_o_LessThan_114_o> created at line 234
+    Found 4-bit comparator greater for signal <statey1[3]_GND_1_o_LessThan_136_o> created at line 275
+    Found 8-bit comparator greater for signal <n0121> created at line 333
+    Found 8-bit comparator lessequal for signal <n0124> created at line 333
+    Found 8-bit comparator lessequal for signal <n0126> created at line 333
+    Found 4-bit comparator greater for signal <statey4[3]_GND_1_o_LessThan_174_o> created at line 333
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  27 D-type flip-flop(s).
+	inferred  14 Comparator(s).
+	inferred   9 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <cpu_checker> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 5
+ 3-bit adder                                           : 1
+ 4-bit adder                                           : 4
+# Registers                                            : 6
+ 3-bit register                                        : 1
+ 4-bit register                                        : 4
+ 8-bit register                                        : 1
+# Comparators                                          : 14
+ 3-bit comparator greater                              : 3
+ 4-bit comparator greater                              : 4
+ 8-bit comparator greater                              : 4
+ 8-bit comparator lessequal                            : 3
+# Multiplexers                                         : 9
+ 4-bit 2-to-1 multiplexer                              : 6
+ 8-bit 2-to-1 multiplexer                              : 3
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <cpu_checker>.
+The following registers are absorbed into counter <statey1>: 1 register on signal <statey1>.
+The following registers are absorbed into counter <states2>: 1 register on signal <states2>.
+The following registers are absorbed into counter <states1>: 1 register on signal <states1>.
+Unit <cpu_checker> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 4-bit adder                                           : 2
+# Counters                                             : 3
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 2
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+# Comparators                                          : 14
+ 3-bit comparator greater                              : 3
+ 4-bit comparator greater                              : 4
+ 8-bit comparator greater                              : 4
+ 8-bit comparator lessequal                            : 3
+# Multiplexers                                         : 9
+ 4-bit 2-to-1 multiplexer                              : 6
+ 8-bit 2-to-1 multiplexer                              : 3
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:21]> with one-hot encoding.
+--------------------------------
+ State | Encoding
+--------------------------------
+ 00000 | 000000000000000000001
+ 00001 | 000000000000000000010
+ 00010 | 000000000000000000100
+ 00011 | 000000000000000001000
+ 00100 | 000000000000000010000
+ 01011 | 000000000000000100000
+ 00101 | 000000000000001000000
+ 00111 | 000000000000010000000
+ 10100 | 000000000000100000000
+ 00110 | 000000000001000000000
+ 01000 | 000000000010000000000
+ 01001 | 000000000100000000000
+ 01010 | 000000001000000000000
+ 10001 | 000000010000000000000
+ 01100 | 000000100000000000000
+ 01101 | 000001000000000000000
+ 01110 | 000010000000000000000
+ 01111 | 000100000000000000000
+ 10000 | 001000000000000000000
+ 10011 | 010000000000000000000
+ 10010 | 100000000000000000000
+--------------------------------
+
+Optimizing unit <cpu_checker> ...
+WARNING:Xst:1293 - FF/Latch <statex1_2> has a constant value of 0 in block <cpu_checker>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <statex1_3> has a constant value of 0 in block <cpu_checker>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <statex1_6> has a constant value of 0 in block <cpu_checker>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <statex1_7> has a constant value of 0 in block <cpu_checker>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <statey1_3> has a constant value of 0 in block <cpu_checker>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <states2_3> has a constant value of 0 in block <cpu_checker>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <statex1_4> in Unit <cpu_checker> is equivalent to the following FF/Latch, which will be removed : <statex1_5> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block cpu_checker, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 41
+ Flip-Flops                                            : 41
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : cpu_checker.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 114
+#      INV                         : 3
+#      LUT2                        : 11
+#      LUT3                        : 16
+#      LUT4                        : 16
+#      LUT5                        : 23
+#      LUT6                        : 45
+# FlipFlops/Latches                : 41
+#      FDE                         : 11
+#      FDR                         : 20
+#      FDRE                        : 9
+#      FDS                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 11
+#      IBUF                        : 9
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              41  out of  126800     0%  
+ Number of Slice LUTs:                  114  out of  63400     0%  
+    Number used as Logic:               114  out of  63400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    114
+   Number with an unused Flip Flop:      73  out of    114    64%  
+   Number with an unused LUT:             0  out of    114     0%  
+   Number of fully used LUT-FF pairs:    41  out of    114    35%  
+   Number of unique control sets:         7
+
+IO Utilization: 
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    210     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 41    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.748ns (Maximum Frequency: 363.967MHz)
+   Minimum input arrival time before clock: 4.493ns
+   Maximum output required time after clock: 0.765ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.748ns (frequency: 363.967MHz)
+  Total number of paths / destination ports: 406 / 70
+-------------------------------------------------------------------------
+Delay:               2.748ns (Levels of Logic = 4)
+  Source:            current_state_FSM_FFd4 (FF)
+  Destination:       statex1_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: current_state_FSM_FFd4 to statex1_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.398   0.808  current_state_FSM_FFd4 (current_state_FSM_FFd4)
+     LUT5:I0->O            1   0.105   0.357  current_state_current_state<1>_SW0 (N4)
+     LUT6:I5->O            5   0.105   0.380  current_state_current_state<1> (current_state<1>)
+     LUT6:I5->O            3   0.105   0.369  Mmux_current_state[4]_statex1[7]_wide_mux_192_OUT111 (Mmux_current_state[4]_statex1[7]_wide_mux_192_OUT111)
+     LUT2:I1->O            1   0.105   0.000  Mmux_current_state[4]_statex1[7]_wide_mux_192_OUT811 (current_state[4]_statex1[7]_wide_mux_192_OUT<0>)
+     FDE:D                     0.015          statex1_0
+    ----------------------------------------
+    Total                      2.748ns (0.833ns logic, 1.915ns route)
+                                       (30.3% logic, 69.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1605 / 82
+-------------------------------------------------------------------------
+Offset:              4.493ns (Levels of Logic = 8)
+  Source:            char<2> (PAD)
+  Destination:       current_state_FSM_FFd20 (FF)
+  Destination Clock: clk rising
+
+  Data Path: char<2> to current_state_FSM_FFd20
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   0.001   0.667  char_2_IBUF (char_2_IBUF)
+     LUT3:I0->O            2   0.105   0.604  n00481_SW0 (N12)
+     LUT6:I3->O            4   0.105   0.374  n00481 (n0048)
+     LUT6:I5->O            8   0.105   0.832  GND_1_o_char[7]_OR_28_o (GND_1_o_char[7]_OR_28_o)
+     LUT6:I0->O            1   0.105   0.357  current_state_FSM_FFd21-In112_SW0 (N32)
+     LUT6:I5->O            2   0.105   0.456  current_state_FSM_FFd21-In113 (current_state_FSM_FFd21-In114)
+     LUT6:I4->O            1   0.105   0.451  current_state_FSM_FFd20-In3_SW0 (N43)
+     LUT6:I4->O            1   0.105   0.000  current_state_FSM_FFd20-In3 (current_state_FSM_FFd20-In)
+     FDR:D                     0.015          current_state_FSM_FFd20
+    ----------------------------------------
+    Total                      4.493ns (0.751ns logic, 3.742ns route)
+                                       (16.7% logic, 83.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.765ns (Levels of Logic = 1)
+  Source:            current_state_FSM_FFd2 (FF)
+  Destination:       format_type<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: current_state_FSM_FFd2 to format_type<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.398   0.367  current_state_FSM_FFd2 (current_state_FSM_FFd2)
+     OBUF:I->O                 0.000          format_type_1_OBUF (format_type<1>)
+    ----------------------------------------
+    Total                      0.765ns (0.398ns logic, 0.367ns route)
+                                       (52.0% logic, 48.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.748|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.96 secs
+ 
+--> 
+
+Total memory usage is 4626156 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   13 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

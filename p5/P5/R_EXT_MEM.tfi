@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+R_EXT_MEM instance_name (
+    .addE(addE), 
+    .wdataE(wdataE), 
+    .rd_rsE(rd_rsE), 
+    .clk(clk), 
+    .addM(addM), 
+    .wdataM(wdataM), 
+    .rd_rsM(rd_rsM)
+    );
+
+

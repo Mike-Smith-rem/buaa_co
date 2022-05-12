@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj mips -o E:/mips/DM.tfi -lib work E:/mips//DM.v -module DM -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

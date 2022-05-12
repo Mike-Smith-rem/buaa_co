@@ -1,0 +1,57 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o E:/P5/testbench_isim_beh.exe -prj E:/P5/testbench_beh.prj work.testbench work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "E:/P5/Stall.v" into library work
+Analyzing Verilog file "E:/P5/R_MEM_WB.v" into library work
+Analyzing Verilog file "E:/P5/R_IF_ID.v" into library work
+Analyzing Verilog file "E:/P5/R_ID_EXT.v" into library work
+Analyzing Verilog file "E:/P5/R_EXT_MEM.v" into library work
+Analyzing Verilog file "E:/P5/PC.v" into library work
+Analyzing Verilog file "E:/P5/MUX_PC.v" into library work
+Analyzing Verilog file "E:/P5/IM.v" into library work
+Analyzing Verilog file "E:/P5/GRF.v" into library work
+Analyzing Verilog file "E:/P5/Forward.v" into library work
+Analyzing Verilog file "E:/P5/EXT.v" into library work
+Analyzing Verilog file "E:/P5/DM.v" into library work
+Analyzing Verilog file "E:/P5/C_MEM_WB.v" into library work
+Analyzing Verilog file "E:/P5/C_IF_ID.v" into library work
+Analyzing Verilog file "E:/P5/C_ID_EXT.v" into library work
+Analyzing Verilog file "E:/P5/C_EXT_MEM.v" into library work
+Analyzing Verilog file "E:/P5/CMP.v" into library work
+Analyzing Verilog file "E:/P5/ALU.v" into library work
+Analyzing Verilog file "E:/P5/main.v" into library work
+Analyzing Verilog file "E:/P5/testbench.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "E:/P5/main.v" Line 247: Port regdstD is not connected to this instance
+Completed static elaboration
+Compiling module MUX_PC
+Compiling module PC
+Compiling module IM
+Compiling module R_IF_ID
+Compiling module C_IF_ID
+Compiling module GRF
+Compiling module EXT
+Compiling module CMP
+Compiling module R_ID_EXT
+Compiling module C_ID_EXT
+Compiling module ALU
+Compiling module R_EXT_MEM
+Compiling module C_EXT_MEM
+Compiling module DM
+Compiling module R_MEM_WB
+Compiling module C_MEM_WB
+Compiling module Forward
+Compiling module Stall
+Compiling module main
+Compiling module testbench
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\testbench_isim_beh.exe.sim\libPortability.dll".
+Compiled 21 Verilog Units
+Built simulation executable E:/P5/testbench_isim_beh.exe
+Fuse Memory Usage: 30124 KB
+Fuse CPU Usage: 640 ms

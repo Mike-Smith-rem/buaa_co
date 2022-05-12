@@ -1,0 +1,26 @@
+
+
+
+// Instantiate the module
+C_IF_ID instance_name (
+    .op(op), 
+    .fun(fun), 
+    .regdst(regdst), 
+    .jump(jump), 
+    .ALUsrc(ALUsrc), 
+    .memtoreg(memtoreg), 
+    .regw(regw), 
+    .memw(memw), 
+    .memr(memr), 
+    .Branch(Branch), 
+    .jjal(jjal), 
+    .jjr(jjr), 
+    .j26(j26), 
+    .signop(signop), 
+    .zeroop(zeroop), 
+    .ALU(ALU), 
+    .T_use_rs(T_use_rs), 
+    .T_use_rt(T_use_rt)
+    );
+
+

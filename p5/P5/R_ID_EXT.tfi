@@ -1,0 +1,22 @@
+
+
+
+// Instantiate the module
+R_ID_EXT instance_name (
+    .RD1D(RD1D), 
+    .RD2D(RD2D), 
+    .rsD(rsD), 
+    .rtD(rtD), 
+    .rdD(rdD), 
+    .externD(externD), 
+    .clk(clk), 
+    .flushE(flushE), 
+    .RD1E(RD1E), 
+    .RD2E(RD2E), 
+    .rsE(rsE), 
+    .rtE(rtE), 
+    .rdE(rdE), 
+    .externE(externE)
+    );
+
+

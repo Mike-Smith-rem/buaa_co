@@ -1,0 +1,3 @@
+vhdtdtfi -lang verilog -prj mips -o E:/mips/main.tfi -lib work E:/mips//main.v -module main -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work E:/mips/main.v -lang verilog -prj mips -o main.spl -module main -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family artix7 main.spl E:/mips/main.sym 

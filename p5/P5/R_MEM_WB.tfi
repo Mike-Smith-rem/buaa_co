@@ -1,0 +1,15 @@
+
+
+
+// Instantiate the module
+R_MEM_WB instance_name (
+    .rdataM(rdataM), 
+    .addM(addM), 
+    .rt_rdM(rt_rdM), 
+    .clk(clk), 
+    .rdataW(rdataW), 
+    .addW(addW), 
+    .rt_rdW(rt_rdW)
+    );
+
+

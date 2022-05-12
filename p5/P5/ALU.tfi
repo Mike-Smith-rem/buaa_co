@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+ALU instance_name (
+    .ALUop(ALUop), 
+    .data_in_rs(data_in_rs), 
+    .data_in_rt(data_in_rt), 
+    .result(result)
+    );
+
+

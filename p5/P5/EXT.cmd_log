@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj P5 -o E:/P5/EXT.tfi -lib work E:/P5//EXT.v -module EXT -template C:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

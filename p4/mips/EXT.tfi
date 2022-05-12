@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+EXT instance_name (
+    .im(im), 
+    .zero_extern(zero_extern), 
+    .sign_extern(sign_extern), 
+    .extern(extern)
+    );
+
+
